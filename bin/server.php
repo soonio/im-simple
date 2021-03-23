@@ -17,7 +17,7 @@ $table->create();
 
 $server = new Server("0.0.0.0", 9501); // 创建websocket服务器
 $server->set([ // 设置
-    'daemonize'     => false, // 进程守护
+    'daemonize'     => (bool) ($argv[1] ?? false), // 进程守护
     'log_file'      => ROOT_PATH . '/runtime/ws.log',
     'pid_file'      => ROOT_PATH . '/runtime/server.pid',
     'reactor_num'   => 2,

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69eb653992d53074a60d82fcaaf44ac3",
+    "content-hash": "c6f41df2af188113db64b7d7457a694f",
     "packages": [
         {
             "name": "swoft/swoole-ide-helper",
@@ -18,13 +18,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/swoft-cloud/swoole-ide-helper/zipball/dfbe372cca6baccd362bc276aa07c5d65b2c1b36",
                 "reference": "dfbe372cca6baccd362bc276aa07c5d65b2c1b36",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -38,6 +32,10 @@
                 "swoft",
                 "swoole"
             ],
+            "support": {
+                "issues": "https://github.com/swoft-cloud/swoole-ide-helper/issues",
+                "source": "https://github.com/swoft-cloud/swoole-ide-helper/tree/master"
+            },
             "time": "2019-10-17T09:54:14+00:00"
         }
     ],
@@ -47,6 +45,11 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "ext-swoole": ">=4.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

@@ -3,7 +3,7 @@
     "authors": [
         {
             "name": "清流",
-            "email": "ruoge3s@qq.com"
+            "email": "sooni@qq.com"
         }
     ],
     "autoload": {
@@ -14,6 +14,7 @@
     "require": {
         "php": ">=7.2",
         "swoft/swoole-ide-helper": "^4.4",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ext-swoole": ">=4.4"
     }
 }
