@@ -1,0 +1,19 @@
+{
+    "name": "qingliu/ws",
+    "authors": [
+        {
+            "name": "清流",
+            "email": "ruoge3s@qq.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/function.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.2",
+        "swoft/swoole-ide-helper": "^4.4",
+        "ext-json": "*"
+    }
+}

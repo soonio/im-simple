@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>websocket</title>
+</head>
+<body>
+
+<script>
+
+    let ws = new WebSocket("ws://127.0.0.1:9501/ws/user/oZXtU5jmUf-GqRjYUtqs6AWcWAII");
+    ws.onopen = function (evt) {
+        console.log("Connection open ...");
+    };
+    ws.connect = function () {
+        let header = {
+            authorize: '1001',
+            type: 'user'
+        }
+        console.log(header)
+    };
+    ws.onmessage = function (event) {
+        console.log(event)
+    };
+    ws.onclose = function (evt) {
+        console.log(evt);
+        console.log("Connection closed.");
+    };
+    setInterval(function () {
+        ws.send(JSON.stringify({
+            type: 'heart',
+            data: {}
+        }))
+    }, 3000)
+</script>
+
+</body>
+</html>
